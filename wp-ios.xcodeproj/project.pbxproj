@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095722E31724D69600C62FF4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095722E21724D69600C62FF4 /* SystemConfiguration.framework */; };
+		095722E51724D69C00C62FF4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095722E41724D69C00C62FF4 /* MobileCoreServices.framework */; };
+		09EC27BF17258B2600081E97 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC27BD17258B2600081E97 /* DetailViewController.m */; };
+		09EC27C017258B2600081E97 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EC27BE17258B2600081E97 /* DetailViewController.xib */; };
+		09EC27C217259A9100081E97 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EC27C117259A9100081E97 /* QuartzCore.framework */; };
+		09F2BD0517245F5B00829600 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F2BD0417245F5B00829600 /* UIKit.framework */; };
+		09F2BD0717245F5B00829600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F2BD0617245F5B00829600 /* Foundation.framework */; };
+		09F2BD0917245F5B00829600 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F2BD0817245F5B00829600 /* CoreGraphics.framework */; };
+		09F2BD0F17245F5B00829600 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD0D17245F5B00829600 /* InfoPlist.strings */; };
+		09F2BD1117245F5B00829600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD1017245F5B00829600 /* main.m */; };
+		09F2BD1517245F5B00829600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD1417245F5B00829600 /* AppDelegate.m */; };
+		09F2BD1717245F5B00829600 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD1617245F5B00829600 /* Default.png */; };
+		09F2BD1917245F5B00829600 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD1817245F5B00829600 /* Default@2x.png */; };
+		09F2BD1B17245F5B00829600 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD1A17245F5B00829600 /* Default-568h@2x.png */; };
+		09F2BD1E17245F5B00829600 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD1D17245F5B00829600 /* FirstViewController.m */; };
+		09F2BD2017245F5B00829600 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD1F17245F5B00829600 /* first.png */; };
+		09F2BD2217245F5B00829600 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD2117245F5B00829600 /* first@2x.png */; };
+		09F2BD2517245F5B00829600 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD2417245F5B00829600 /* SecondViewController.m */; };
+		09F2BD2717245F5B00829600 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD2617245F5B00829600 /* second.png */; };
+		09F2BD2917245F5B00829600 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD2817245F5B00829600 /* second@2x.png */; };
+		09F2BD2C17245F5B00829600 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD2A17245F5B00829600 /* FirstViewController.xib */; };
+		09F2BD2F17245F5B00829600 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD2D17245F5B00829600 /* SecondViewController.xib */; };
+		09F2BD3717245F5B00829600 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F2BD3617245F5B00829600 /* SenTestingKit.framework */; };
+		09F2BD3817245F5B00829600 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F2BD0417245F5B00829600 /* UIKit.framework */; };
+		09F2BD3917245F5B00829600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F2BD0617245F5B00829600 /* Foundation.framework */; };
+		09F2BD4117245F5B00829600 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09F2BD3F17245F5B00829600 /* InfoPlist.strings */; };
+		09F2BD4417245F5B00829600 /* wp_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD4317245F5B00829600 /* wp_iosTests.m */; };
+		09F2BD611724623100829600 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD4F1724623100829600 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
+		09F2BD621724623100829600 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD511724623100829600 /* AFHTTPRequestOperation.m */; };
+		09F2BD631724623100829600 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD531724623100829600 /* AFImageRequestOperation.m */; };
+		09F2BD641724623100829600 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD551724623100829600 /* AFJSONRequestOperation.m */; };
+		09F2BD651724623100829600 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD571724623100829600 /* AFNetworkActivityIndicatorManager.m */; };
+		09F2BD661724623100829600 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD5A1724623100829600 /* AFPropertyListRequestOperation.m */; };
+		09F2BD671724623100829600 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD5C1724623100829600 /* AFURLConnectionOperation.m */; };
+		09F2BD681724623100829600 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD5E1724623100829600 /* AFXMLRequestOperation.m */; };
+		09F2BD691724623100829600 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F2BD601724623100829600 /* UIImageView+AFNetworking.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09F2BD3A17245F5B00829600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09F2BCF917245F5A00829600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09F2BD0017245F5A00829600;
+			remoteInfo = "wp-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095722E21724D69600C62FF4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		095722E41724D69C00C62FF4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		09EC27BC17258B2600081E97 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		09EC27BD17258B2600081E97 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		09EC27BE17258B2600081E97 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		09EC27C117259A9100081E97 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		09F2BD0117245F5B00829600 /* wp-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wp-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F2BD0417245F5B00829600 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09F2BD0617245F5B00829600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09F2BD0817245F5B00829600 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09F2BD0C17245F5B00829600 /* wp-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wp-ios-Info.plist"; sourceTree = "<group>"; };
+		09F2BD0E17245F5B00829600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09F2BD1017245F5B00829600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09F2BD1217245F5B00829600 /* wp-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wp-ios-Prefix.pch"; sourceTree = "<group>"; };
+		09F2BD1317245F5B00829600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09F2BD1417245F5B00829600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09F2BD1617245F5B00829600 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		09F2BD1817245F5B00829600 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		09F2BD1A17245F5B00829600 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		09F2BD1C17245F5B00829600 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		09F2BD1D17245F5B00829600 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		09F2BD1F17245F5B00829600 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		09F2BD2117245F5B00829600 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		09F2BD2317245F5B00829600 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		09F2BD2417245F5B00829600 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		09F2BD2617245F5B00829600 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		09F2BD2817245F5B00829600 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		09F2BD2B17245F5B00829600 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		09F2BD2E17245F5B00829600 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		09F2BD3517245F5B00829600 /* wp-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wp-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F2BD3617245F5B00829600 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		09F2BD3E17245F5B00829600 /* wp-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wp-iosTests-Info.plist"; sourceTree = "<group>"; };
+		09F2BD4017245F5B00829600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09F2BD4217245F5B00829600 /* wp_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wp_iosTests.h; sourceTree = "<group>"; };
+		09F2BD4317245F5B00829600 /* wp_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wp_iosTests.m; sourceTree = "<group>"; };
+		09F2BD4E1724623100829600 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		09F2BD4F1724623100829600 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		09F2BD501724623100829600 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		09F2BD511724623100829600 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		09F2BD521724623100829600 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		09F2BD531724623100829600 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		09F2BD541724623100829600 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		09F2BD551724623100829600 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		09F2BD561724623100829600 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		09F2BD571724623100829600 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		09F2BD581724623100829600 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		09F2BD591724623100829600 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		09F2BD5A1724623100829600 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		09F2BD5B1724623100829600 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		09F2BD5C1724623100829600 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		09F2BD5D1724623100829600 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		09F2BD5E1724623100829600 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		09F2BD5F1724623100829600 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		09F2BD601724623100829600 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		09F2BD6B17246B8A00829600 /* ApiUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUrl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09F2BCFE17245F5A00829600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EC27C217259A9100081E97 /* QuartzCore.framework in Frameworks */,
+				095722E51724D69C00C62FF4 /* MobileCoreServices.framework in Frameworks */,
+				095722E31724D69600C62FF4 /* SystemConfiguration.framework in Frameworks */,
+				09F2BD0517245F5B00829600 /* UIKit.framework in Frameworks */,
+				09F2BD0717245F5B00829600 /* Foundation.framework in Frameworks */,
+				09F2BD0917245F5B00829600 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F2BD3117245F5B00829600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F2BD3717245F5B00829600 /* SenTestingKit.framework in Frameworks */,
+				09F2BD3817245F5B00829600 /* UIKit.framework in Frameworks */,
+				09F2BD3917245F5B00829600 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F2BCF817245F5A00829600 = {
+			isa = PBXGroup;
+			children = (
+				09EC27C117259A9100081E97 /* QuartzCore.framework */,
+				095722E41724D69C00C62FF4 /* MobileCoreServices.framework */,
+				095722E21724D69600C62FF4 /* SystemConfiguration.framework */,
+				09F2BD0A17245F5B00829600 /* wp-ios */,
+				09F2BD3C17245F5B00829600 /* wp-iosTests */,
+				09F2BD0317245F5B00829600 /* Frameworks */,
+				09F2BD0217245F5B00829600 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09F2BD0217245F5B00829600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD0117245F5B00829600 /* wp-ios.app */,
+				09F2BD3517245F5B00829600 /* wp-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09F2BD0317245F5B00829600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD0417245F5B00829600 /* UIKit.framework */,
+				09F2BD0617245F5B00829600 /* Foundation.framework */,
+				09F2BD0817245F5B00829600 /* CoreGraphics.framework */,
+				09F2BD3617245F5B00829600 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09F2BD0A17245F5B00829600 /* wp-ios */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD4D1724623100829600 /* AFNetworking */,
+				09F2BD1317245F5B00829600 /* AppDelegate.h */,
+				09F2BD1417245F5B00829600 /* AppDelegate.m */,
+				09F2BD1C17245F5B00829600 /* FirstViewController.h */,
+				09F2BD1D17245F5B00829600 /* FirstViewController.m */,
+				09F2BD1F17245F5B00829600 /* first.png */,
+				09F2BD2117245F5B00829600 /* first@2x.png */,
+				09F2BD2317245F5B00829600 /* SecondViewController.h */,
+				09F2BD2417245F5B00829600 /* SecondViewController.m */,
+				09F2BD2617245F5B00829600 /* second.png */,
+				09F2BD2817245F5B00829600 /* second@2x.png */,
+				09F2BD2A17245F5B00829600 /* FirstViewController.xib */,
+				09F2BD2D17245F5B00829600 /* SecondViewController.xib */,
+				09F2BD0B17245F5B00829600 /* Supporting Files */,
+				09F2BD6B17246B8A00829600 /* ApiUrl.h */,
+				09EC27BC17258B2600081E97 /* DetailViewController.h */,
+				09EC27BD17258B2600081E97 /* DetailViewController.m */,
+				09EC27BE17258B2600081E97 /* DetailViewController.xib */,
+			);
+			path = "wp-ios";
+			sourceTree = "<group>";
+		};
+		09F2BD0B17245F5B00829600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD0C17245F5B00829600 /* wp-ios-Info.plist */,
+				09F2BD0D17245F5B00829600 /* InfoPlist.strings */,
+				09F2BD1017245F5B00829600 /* main.m */,
+				09F2BD1217245F5B00829600 /* wp-ios-Prefix.pch */,
+				09F2BD1617245F5B00829600 /* Default.png */,
+				09F2BD1817245F5B00829600 /* Default@2x.png */,
+				09F2BD1A17245F5B00829600 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09F2BD3C17245F5B00829600 /* wp-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD4217245F5B00829600 /* wp_iosTests.h */,
+				09F2BD4317245F5B00829600 /* wp_iosTests.m */,
+				09F2BD3D17245F5B00829600 /* Supporting Files */,
+			);
+			path = "wp-iosTests";
+			sourceTree = "<group>";
+		};
+		09F2BD3D17245F5B00829600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD3E17245F5B00829600 /* wp-iosTests-Info.plist */,
+				09F2BD3F17245F5B00829600 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09F2BD4D1724623100829600 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				09F2BD4E1724623100829600 /* AFHTTPClient.h */,
+				09F2BD4F1724623100829600 /* AFHTTPClient.m */,
+				09F2BD501724623100829600 /* AFHTTPRequestOperation.h */,
+				09F2BD511724623100829600 /* AFHTTPRequestOperation.m */,
+				09F2BD521724623100829600 /* AFImageRequestOperation.h */,
+				09F2BD531724623100829600 /* AFImageRequestOperation.m */,
+				09F2BD541724623100829600 /* AFJSONRequestOperation.h */,
+				09F2BD551724623100829600 /* AFJSONRequestOperation.m */,
+				09F2BD561724623100829600 /* AFNetworkActivityIndicatorManager.h */,
+				09F2BD571724623100829600 /* AFNetworkActivityIndicatorManager.m */,
+				09F2BD581724623100829600 /* AFNetworking.h */,
+				09F2BD591724623100829600 /* AFPropertyListRequestOperation.h */,
+				09F2BD5A1724623100829600 /* AFPropertyListRequestOperation.m */,
+				09F2BD5B1724623100829600 /* AFURLConnectionOperation.h */,
+				09F2BD5C1724623100829600 /* AFURLConnectionOperation.m */,
+				09F2BD5D1724623100829600 /* AFXMLRequestOperation.h */,
+				09F2BD5E1724623100829600 /* AFXMLRequestOperation.m */,
+				09F2BD5F1724623100829600 /* UIImageView+AFNetworking.h */,
+				09F2BD601724623100829600 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = ../AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09F2BD0017245F5A00829600 /* wp-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F2BD4717245F5B00829600 /* Build configuration list for PBXNativeTarget "wp-ios" */;
+			buildPhases = (
+				09F2BCFD17245F5A00829600 /* Sources */,
+				09F2BCFE17245F5A00829600 /* Frameworks */,
+				09F2BCFF17245F5A00829600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wp-ios";
+			productName = "wp-ios";
+			productReference = 09F2BD0117245F5B00829600 /* wp-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09F2BD3417245F5B00829600 /* wp-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F2BD4A17245F5B00829600 /* Build configuration list for PBXNativeTarget "wp-iosTests" */;
+			buildPhases = (
+				09F2BD3017245F5B00829600 /* Sources */,
+				09F2BD3117245F5B00829600 /* Frameworks */,
+				09F2BD3217245F5B00829600 /* Resources */,
+				09F2BD3317245F5B00829600 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09F2BD3B17245F5B00829600 /* PBXTargetDependency */,
+			);
+			name = "wp-iosTests";
+			productName = "wp-iosTests";
+			productReference = 09F2BD3517245F5B00829600 /* wp-iosTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09F2BCF917245F5A00829600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = SAI;
+			};
+			buildConfigurationList = 09F2BCFC17245F5A00829600 /* Build configuration list for PBXProject "wp-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09F2BCF817245F5A00829600;
+			productRefGroup = 09F2BD0217245F5B00829600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09F2BD0017245F5A00829600 /* wp-ios */,
+				09F2BD3417245F5B00829600 /* wp-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09F2BCFF17245F5A00829600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F2BD0F17245F5B00829600 /* InfoPlist.strings in Resources */,
+				09F2BD1717245F5B00829600 /* Default.png in Resources */,
+				09F2BD1917245F5B00829600 /* Default@2x.png in Resources */,
+				09F2BD1B17245F5B00829600 /* Default-568h@2x.png in Resources */,
+				09F2BD2017245F5B00829600 /* first.png in Resources */,
+				09F2BD2217245F5B00829600 /* first@2x.png in Resources */,
+				09F2BD2717245F5B00829600 /* second.png in Resources */,
+				09F2BD2917245F5B00829600 /* second@2x.png in Resources */,
+				09F2BD2C17245F5B00829600 /* FirstViewController.xib in Resources */,
+				09F2BD2F17245F5B00829600 /* SecondViewController.xib in Resources */,
+				09EC27C017258B2600081E97 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F2BD3217245F5B00829600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F2BD4117245F5B00829600 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09F2BD3317245F5B00829600 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09F2BCFD17245F5A00829600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F2BD1117245F5B00829600 /* main.m in Sources */,
+				09F2BD1517245F5B00829600 /* AppDelegate.m in Sources */,
+				09F2BD1E17245F5B00829600 /* FirstViewController.m in Sources */,
+				09F2BD2517245F5B00829600 /* SecondViewController.m in Sources */,
+				09F2BD611724623100829600 /* AFHTTPClient.m in Sources */,
+				09F2BD621724623100829600 /* AFHTTPRequestOperation.m in Sources */,
+				09F2BD631724623100829600 /* AFImageRequestOperation.m in Sources */,
+				09F2BD641724623100829600 /* AFJSONRequestOperation.m in Sources */,
+				09F2BD651724623100829600 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				09F2BD661724623100829600 /* AFPropertyListRequestOperation.m in Sources */,
+				09F2BD671724623100829600 /* AFURLConnectionOperation.m in Sources */,
+				09F2BD681724623100829600 /* AFXMLRequestOperation.m in Sources */,
+				09F2BD691724623100829600 /* UIImageView+AFNetworking.m in Sources */,
+				09EC27BF17258B2600081E97 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F2BD3017245F5B00829600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F2BD4417245F5B00829600 /* wp_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09F2BD3B17245F5B00829600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09F2BD0017245F5A00829600 /* wp-ios */;
+			targetProxy = 09F2BD3A17245F5B00829600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09F2BD0D17245F5B00829600 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09F2BD0E17245F5B00829600 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09F2BD2A17245F5B00829600 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09F2BD2B17245F5B00829600 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		09F2BD2D17245F5B00829600 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09F2BD2E17245F5B00829600 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		09F2BD3F17245F5B00829600 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09F2BD4017245F5B00829600 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09F2BD4517245F5B00829600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09F2BD4617245F5B00829600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09F2BD4817245F5B00829600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp-ios/wp-ios-Prefix.pch";
+				INFOPLIST_FILE = "wp-ios/wp-ios-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../three20-master/Build/Products/Release-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09F2BD4917245F5B00829600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp-ios/wp-ios-Prefix.pch";
+				INFOPLIST_FILE = "wp-ios/wp-ios-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../three20-master/Build/Products/Release-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09F2BD4B17245F5B00829600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wp-ios.app/wp-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp-ios/wp-ios-Prefix.pch";
+				INFOPLIST_FILE = "wp-iosTests/wp-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		09F2BD4C17245F5B00829600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wp-ios.app/wp-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp-ios/wp-ios-Prefix.pch";
+				INFOPLIST_FILE = "wp-iosTests/wp-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09F2BCFC17245F5A00829600 /* Build configuration list for PBXProject "wp-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F2BD4517245F5B00829600 /* Debug */,
+				09F2BD4617245F5B00829600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F2BD4717245F5B00829600 /* Build configuration list for PBXNativeTarget "wp-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F2BD4817245F5B00829600 /* Debug */,
+				09F2BD4917245F5B00829600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F2BD4A17245F5B00829600 /* Build configuration list for PBXNativeTarget "wp-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F2BD4B17245F5B00829600 /* Debug */,
+				09F2BD4C17245F5B00829600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09F2BCF917245F5A00829600 /* Project object */;
+}
