@@ -12,6 +12,7 @@
 #import "ApiUrl.h"
 #import "DetailViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CustomCell.h"
 
 
 
@@ -104,15 +105,20 @@
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellID = @"Cell Identifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    static NSString *simpleTableIdentifier = @"CustomCell";
+    
+    CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
+    
+
    
-    NSDictionary *data = [self.latest objectAtIndex:indexPath.row];
-    cell.textLabel.text =[self flattenHTML:[data objectForKey:@"title_plain"]];
-  
+NSDictionary *data = [self.latest objectAtIndex:indexPath.row];
+    cell.name.text =[self flattenHTML:[data objectForKey:@"title_plain"]];
+    [cell.thumbnail setImageWithURL:[NSURL URLWithString:[data objectForKey:@"thumbnail"]] placeholderImage:[UIImage imageNamed:[data objectForKey:@"title_plain"]]];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -139,6 +145,12 @@
    // self.navigationController.navigationBar.backItem.title = @"Back";
 
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 78;
+}
+
 - (NSString *)flattenHTML:(NSString *)html {
     
     NSScanner *theScanner;

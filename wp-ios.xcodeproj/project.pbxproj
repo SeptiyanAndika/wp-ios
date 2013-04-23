@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		095722E31724D69600C62FF4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095722E21724D69600C62FF4 /* SystemConfiguration.framework */; };
 		095722E51724D69C00C62FF4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095722E41724D69C00C62FF4 /* MobileCoreServices.framework */; };
+		09E42C9217268566004B6819 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E42C9117268566004B6819 /* CustomCell.xib */; };
+		09E42C95172686DC004B6819 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E42C94172686DC004B6819 /* CustomCell.m */; };
 		09EC27BF17258B2600081E97 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EC27BD17258B2600081E97 /* DetailViewController.m */; };
 		09EC27C017258B2600081E97 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EC27BE17258B2600081E97 /* DetailViewController.xib */; };
 		09EC27C217259A9100081E97 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EC27C117259A9100081E97 /* QuartzCore.framework */; };
@@ -58,6 +60,9 @@
 /* Begin PBXFileReference section */
 		095722E21724D69600C62FF4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		095722E41724D69C00C62FF4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		09E42C9117268566004B6819 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		09E42C93172686DC004B6819 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		09E42C94172686DC004B6819 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		09EC27BC17258B2600081E97 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		09EC27BD17258B2600081E97 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		09EC27BE17258B2600081E97 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
@@ -194,6 +199,9 @@
 				09EC27BC17258B2600081E97 /* DetailViewController.h */,
 				09EC27BD17258B2600081E97 /* DetailViewController.m */,
 				09EC27BE17258B2600081E97 /* DetailViewController.xib */,
+				09E42C9117268566004B6819 /* CustomCell.xib */,
+				09E42C93172686DC004B6819 /* CustomCell.h */,
+				09E42C94172686DC004B6819 /* CustomCell.m */,
 			);
 			path = "wp-ios";
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 				09F2BD2C17245F5B00829600 /* FirstViewController.xib in Resources */,
 				09F2BD2F17245F5B00829600 /* SecondViewController.xib in Resources */,
 				09EC27C017258B2600081E97 /* DetailViewController.xib in Resources */,
+				09E42C9217268566004B6819 /* CustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +397,7 @@
 				09F2BD681724623100829600 /* AFXMLRequestOperation.m in Sources */,
 				09F2BD691724623100829600 /* UIImageView+AFNetworking.m in Sources */,
 				09EC27BF17258B2600081E97 /* DetailViewController.m in Sources */,
+				09E42C95172686DC004B6819 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
