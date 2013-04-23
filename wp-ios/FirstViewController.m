@@ -136,7 +136,7 @@ NSDictionary *data = [self.latest objectAtIndex:indexPath.row];
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
     
    // self.navigationController.navigationBarHidden = NO;
-    
+    detail.hidesBottomBarWhenPushed=YES;
     [self.navigationController pushViewController:detail animated:NO];
     
    // [self.navigationController popViewControllerAnimated:NO];

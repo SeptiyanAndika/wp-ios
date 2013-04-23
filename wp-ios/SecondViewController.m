@@ -86,9 +86,9 @@
     FirstViewController *listdata = [[FirstViewController alloc] initCategory:idcat nameCategory:title];
     
     
-    
-  [self.navigationController pushViewController:listdata animated:NO];
-        
+     listdata.hidesBottomBarWhenPushed=YES;  
+  [self.navigationController pushViewController:listdata animated:YES];
+       
 }
 
 
