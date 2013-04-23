@@ -30,11 +30,11 @@
         self.latest = [[NSArray alloc] init];
          
         [self.indicator startAnimating];
-        
+        NSLog(@"aaaaa");
         NSURL *url = [NSURL URLWithString:LatestURL];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-              NSLog(@"App.net Global Stream: %@", JSON);
+          //    NSLog(@"App.net Global Stream: %@", JSON);
             self.latest= [JSON objectForKey:@"posts"];
             [self.tableView reloadData];
             
@@ -47,7 +47,38 @@
             }
     return self;
 }
-							
+
+- (id)initCategory:(NSInteger)idCategory nameCategory:(NSString *)nameCat{
+
+    
+    self = [super initWithNibName:nil bundle:nil];
+    if (self) {
+        self.title = NSLocalizedString(nameCat, nameCat);
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.latest = [[NSArray alloc] init];
+        
+        [self.indicator startAnimating];
+        
+        int idcat=idCategory;
+        NSString *strUrl = [NSString stringWithFormat:ByCategoryURL, idcat];
+        
+        NSLog(strUrl);
+        NSURL *url = [NSURL URLWithString:strUrl];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+          //  NSLog(@"App.net Global Stream: %@", JSON);
+            self.latest= [JSON objectForKey:@"posts"];
+            [self.tableView reloadData];
+            
+            [self.indicator stopAnimating];
+            [self.tableView setHidden:NO];
+        } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+            NSLog(@"Request Failed with Error: %@, %@", error, error.userInfo);
+        }];
+        [operation start];
+    }
+    return self;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

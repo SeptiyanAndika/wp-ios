@@ -12,5 +12,6 @@
 
 #define CategoryURL @"http://idberry.com/api/get_category_index/"
 #define LatestURL @"http://idberry.com/api/get_recent_posts/"
+#define ByCategoryURL @"http://idberry.com/api/get_category_posts/?id=%d"
 
 

@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (NSString *)flattenHTML:(NSString *)html;
-
+- (id)initCategory:(NSInteger)idCategory nameCategory:(NSString *)nameCat;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

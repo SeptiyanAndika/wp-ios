@@ -10,6 +10,7 @@
 #import "AFHTTPClient.h"
 #import "AFJSONRequestOperation.h"
 #import "ApiUrl.h"
+#import "FirstViewController.h"
 @interface SecondViewController ()
 
 @end
@@ -70,6 +71,24 @@
     cell.detailTextLabel.text = [data objectForKey:@"description"];
     
     return cell;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSDictionary *data = [self.categgories objectAtIndex:indexPath.row];
+    // NSNumber *idcat=[data objectForKey:@"id"] ;
+    int idcat = [[data objectForKey:@"id"] intValue];
+    NSString *title=[data objectForKey:@"title"] ;
+    
+  
+    // NSLog(title);
+    FirstViewController *listdata = [[FirstViewController alloc] initCategory:idcat nameCategory:title];
+    
+    
+    
+  [self.navigationController pushViewController:listdata animated:NO];
+        
 }
 
 
