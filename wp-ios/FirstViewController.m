@@ -63,7 +63,7 @@
         int idcat=idCategory;
         NSString *strUrl = [NSString stringWithFormat:ByCategoryURL, idcat];
         
-        NSLog(strUrl);
+      //  NSLog(strUrl);
         NSURL *url = [NSURL URLWithString:strUrl];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
@@ -114,10 +114,12 @@
         cell = [nib objectAtIndex:0];
     }
     
-
-   
-NSDictionary *data = [self.latest objectAtIndex:indexPath.row];
-    cell.name.text =[self flattenHTML:[data objectForKey:@"title_plain"]];
+    
+    NSDictionary *data = [self.latest objectAtIndex:indexPath.row];
+    NSString *encodedString = [data objectForKey:@"title_plain"];
+    NSString *decodedString = [NSString stringWithUTF8String:[encodedString cStringUsingEncoding:[NSString defaultCStringEncoding]]];
+    
+    cell.judul.text =decodedString;
     [cell.thumbnail setImageWithURL:[NSURL URLWithString:[data objectForKey:@"thumbnail"]] placeholderImage:[UIImage imageNamed:[data objectForKey:@"title_plain"]]];
     return cell;
 }

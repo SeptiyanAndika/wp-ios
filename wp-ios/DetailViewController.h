@@ -10,7 +10,7 @@
 
 @interface DetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextView *judul;
+@property (weak, nonatomic) IBOutlet UILabel *judul;
 @property (nonatomic, retain) NSDictionary *data;
 - (id)initWitData:(NSDictionary *)data;
 @property (weak, nonatomic) IBOutlet UIWebView *detail;

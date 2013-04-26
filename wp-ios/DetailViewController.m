@@ -45,8 +45,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self.judul setText:[self.data objectForKey:@"title_plain"]];
+   
+    NSString *encodedString = [self.data objectForKey:@"title_plain"];
+    NSString *decodedString = [NSString stringWithUTF8String:[encodedString cStringUsingEncoding:[NSString defaultCStringEncoding]]];
+
+    [self.judul setText:decodedString];
     [self.detail loadHTMLString:[self.data objectForKey:@"content"] baseURL:nil];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(popAnimation)];

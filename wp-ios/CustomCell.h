@@ -11,6 +11,6 @@
 
 @interface CustomCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
-@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *judul;
 
 @end

@@ -47,7 +47,6 @@
 								<string key="NSFrame">{{241, 3}, {71, 74}}</string>
 								<reference key="NSSuperview" ref="886258526"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -121,19 +120,19 @@
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">name</string>
-						<reference key="source" ref="966039027"/>
-						<reference key="destination" ref="836521136"/>
-					</object>
-					<int key="connectionID">25</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">thumbnail</string>
 						<reference key="source" ref="966039027"/>
 						<reference key="destination" ref="924672368"/>
 					</object>
 					<int key="connectionID">26</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">judul</string>
+						<reference key="source" ref="966039027"/>
+						<reference key="destination" ref="836521136"/>
+					</object>
+					<int key="connectionID">29</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -268,21 +267,6 @@
 						<reference key="parent" ref="966039027"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="801964325"/>
-						<reference key="parent" ref="924672368"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="190606515"/>
-						<reference key="parent" ref="924672368"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">12</int>
-						<reference key="object" ref="730811287"/>
-						<reference key="parent" ref="966039027"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">14</int>
 						<reference key="object" ref="836521136"/>
 						<array class="NSMutableArray" key="children">
@@ -327,23 +311,38 @@
 						<reference key="parent" ref="966039027"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">18</int>
-						<reference key="object" ref="140291420"/>
-						<reference key="parent" ref="966039027"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
 						<reference key="object" ref="221963323"/>
 						<reference key="parent" ref="966039027"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">23</int>
-						<reference key="object" ref="197743368"/>
+						<int key="objectID">24</int>
+						<reference key="object" ref="677892636"/>
 						<reference key="parent" ref="836521136"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">24</int>
-						<reference key="object" ref="677892636"/>
+						<int key="objectID">11</int>
+						<reference key="object" ref="190606515"/>
+						<reference key="parent" ref="924672368"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">10</int>
+						<reference key="object" ref="801964325"/>
+						<reference key="parent" ref="924672368"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">12</int>
+						<reference key="object" ref="730811287"/>
+						<reference key="parent" ref="966039027"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">18</int>
+						<reference key="object" ref="140291420"/>
+						<reference key="parent" ref="966039027"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">23</int>
+						<reference key="object" ref="197743368"/>
 						<reference key="parent" ref="836521136"/>
 					</object>
 				</array>
@@ -385,7 +384,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">28</int>
+			<int key="maxID">35</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -393,12 +392,12 @@
 					<string key="className">CustomCell</string>
 					<string key="superclassName">UITableViewCell</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="name">UILabel</string>
+						<string key="judul">UILabel</string>
 						<string key="thumbnail">UIImageView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="name">
-							<string key="name">name</string>
+						<object class="IBToOneOutletInfo" key="judul">
+							<string key="name">judul</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="thumbnail">
